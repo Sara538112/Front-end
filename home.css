@@ -406,7 +406,7 @@ font-size: 13px;
     transition: transform 0.3s, box-shadow 0.3s;
 
 }
-#dv8 article .ans{
+#dv8 .q p{
     display: none;
 }
 #dv8 article button:hover{
