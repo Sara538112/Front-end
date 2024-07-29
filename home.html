@@ -277,24 +277,34 @@
                 </div>
                 <article>
                 <div class="q">
-                    <button class="btn">  question </button>
-                    <p class="ans">answer</p>
+                    <button class="btn" onclick="ans('ans1')">  question </button>
+                    <p id="ans1">answer</p>
                 </div>
                 <div class="q">
-                    <button class="btn">  question </button>
-                    <p class="ans">answer</p>
+                    <button class="btn" onclick="ans('ans2')">  question </button>
+                    <p id="ans2">answer</p>
                 </div>
                 <div class="q">
-                    <button class="btn">  question </button>
-                    <p class="ans">answer</p>
+                    <button class="btn" onclick="ans('ans3')">  question </button>
+                    <p id="ans3">answer</p>
                 </div>
                 <div class="q">
-                    <button class="btn">  question </button>
-                    <p class="ans">answer</p>
+                    <button class="btn" onclick="ans('ans4')">  question </button>
+                    <p id="ans4">answer</p>
                 </div>
             </article>
         </div>
-       
+       <script>
+            function ans(id){
+                var answer=document.getElementById(id);
+                if(answer.style.display === "none"){
+                    answer.style.display="block";
+                }
+                else{
+                    answer.style.display="none";
+                }
+            }
+       </script>
         <footer>
             <div class="cards6"> 
                 <h2>About Us</h2>
